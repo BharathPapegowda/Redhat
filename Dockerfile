@@ -10,7 +10,7 @@ ADD https://github.com/BharathPapegowda/custom/releases/download/1.0/openshift.j
 
 COPY startService.sh /opt/app/bin/
 
-RUN chown -R 0 /opt/app &&
+RUN chown -R 0 /opt/app && \
     chmod -R g=u /opt/app
 
 USER 1001
