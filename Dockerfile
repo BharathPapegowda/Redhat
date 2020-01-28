@@ -14,6 +14,8 @@ RUN chgrp -R 0 /opt/app && \
     chmod -R g=u /opt/app && \
     chmod 777 /opt/app/bin/startService.sh
 
+EXPOSE 8080
+
 USER 1001
 
 #Run the app using executable jar
