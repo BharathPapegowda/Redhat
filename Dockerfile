@@ -11,7 +11,8 @@ ADD https://github.com/BharathPapegowda/custom/releases/download/1.0/openshift.j
 COPY startService.sh /opt/app/bin/
 
 RUN chgrp -R 0 /opt/app && \
-    chmod -R g=u /opt/app
+    chmod -R g=u /opt/app && \
+    chmod 777 /opt/app/bin/startService.sh
 
 USER 1001
 
