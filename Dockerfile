@@ -14,7 +14,7 @@ RUN chgrp -R 0 /opt/app && \
     chmod -R g=u /opt/app && \
     chmod 777 /opt/app/bin/startService.sh
 
-EXPOSE 8080
+EXPOSE 8000
 
 USER 1001
 
